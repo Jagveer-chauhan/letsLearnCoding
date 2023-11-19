@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import DefaultTheme from 'tailwindcss/defaultTheme';
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,12 +9,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        "Poppins": ["Poppins", ...DefaultTheme.fontFamily.sans],
       },
     },
+    colors:{
+      'bg-blue':'#5035F1',
+      'dark-blue':'#0C0E2B',
+      'btn-bg':'#5035F1',
+      'blue-text':'#5863F8'
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
+  

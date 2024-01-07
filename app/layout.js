@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </head>
       <body className={inter.className}>
-        {/* <Navbar/> */}
+        <Navbar/>
         {children}
         <Footer/>
         </body>

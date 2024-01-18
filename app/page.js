@@ -6,14 +6,14 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
-    <main className="bg-[url('/images/backgroundImage.png')] text-neutral-50 hero">
+    <main className="bg-[url('/images/backgroundImage.png')] text-white hero">
     <div className="hero-overlay bg-opacity-40"></div>
      <div className='hero-content flex flex-col h-[80vh] justify-center items-center font-Poppins font-normal text-center'>
       <h1 className='text-4xl px-2 font-medium sm:text-5xl md:text-6xl lg:text-7xl'>Find Better Software <br/> Service Company</h1>
       <h2 className='text-xl font-medium pt-6 px-2 sm:text-2xl md:text-2xl lg:text-3xl'>We will help you to feel better and enjoy every single day of your life</h2>
      </div>
     </main>
-    <div className='flex flex-col justify-center items-center bg-bg-blue py-3 px-6 font-Poppins md:flex-row text-neutral-50'>
+    <div className='flex flex-col justify-evenly items-center bg-bg-blue py-3 px-6 font-Poppins md:flex-row text-white'>
       <div className='flex flex-col justify-center items-center md:flex-row'>
         <div className='image-full'>
           <Image src="/images/icons/icons (5).png" width={110} height={110} alt="image"></Image>
@@ -42,7 +42,7 @@ export default function Home() {
         </div> 
       </div>
     </div>
-    <div className='flex flex-col text-neutral-50 font-Poppins p-5'>
+    <div className='flex flex-col text-white font-Poppins p-5'>
       <div className='flex flex-row sm:justify-between p-5 justify-center'>
         <span className='text-3xl sm:px-7 font-medium'>Popular Courses</span>
         <Link className='hidden sm:block px-7 py-2 rounded-md bg-btn-bg' href={'#'}>View all Courses</Link>
@@ -114,7 +114,7 @@ export default function Home() {
       </div>
         <Link className='sm:hidden px-7 py-2 mt-4 rounded-md bg-btn-bg text-center mx-10' href={'#'}>View all Courses</Link>
     </div>
-    <div className='relative grid grid-col-1 sm:grid-cols-2 content-center p-10 sm:p-2 font-Poppins text-neutral-50'>
+    <div className='relative grid grid-col-1 sm:grid-cols-2 content-center p-10 sm:p-2 font-Poppins text-white'>
       <div className='xs:pl-16 xs:py-6 sm:m-auto'>
         <p className='text-sm py-2'>Create Your Success</p>
         <h3 className='text-3xl font-medium'>Best IT Courses<br/>& Upgrade Your Skills</h3>
@@ -140,7 +140,7 @@ export default function Home() {
     <span className='absolute -ms-80 -mt-52'>
     <Image src={"/images/icons/Path 62.png"} height={400} width={400} alt='design'></Image>
     </span>
-    <div className="text-center font-Poppins relative text-neutral-50">
+    <div className="text-center font-Poppins relative text-white">
       <h4 className='text-4xl'>Explore Our Popular Courses</h4>
       <p className='text-sm pt-4 px-10'>Jeffrey crikey victoria sponge mush spiffing super arse over tit matie boy smashing. The little rotter off his nut codswallop.!</p>
       <div className='px-5 py-10 lg:py-20'>
@@ -190,13 +190,13 @@ export default function Home() {
     {/* <span className='absolute -right-40'>
     <Image src={"/images/3.png"} height={400} width={400} alt='design'></Image>
     </span> */}
-    <div className="relative text-center font-Poppins text-neutral-50 z-10">
+    <div className="relative text-center font-Poppins text-white z-10">
       <h4 className='text-4xl'>Explore Our Blogs</h4>
       <p className='text-sm pt-4 px-10'>I am glad that you have made it here to send a distress signal, & inform the Senate that all on board</p>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10 m-auto px-5 py-10 lg:px-20'>
-        <div className='flex flex-row bg-neutral-50'>
+        <div className='flex flex-row bg-white'>
           <Image src={'/images/5.png'} width={130} height={160} alt='blog Image'></Image> 
-          <span className='pl-4 py-4 text-left'>
+          <span className='w-full pl-4 py-4 text-left'>
             <p className='text-base uppercase font-semibold text-blue-text'>Language</p>
             <p className='text-base font-normal capitalize text-neutral-950'>how to crack interviews</p>
             <p className='text-xs py-5 text-neutral-600'>Fresh food directly from our restaurant ready coocked for you and you familly</p>
@@ -205,9 +205,9 @@ export default function Home() {
             <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
           </span>
         </div>
-        <div className='flex flex-row bg-neutral-50'>
+        <div className='flex flex-row bg-white'>
           <Image src={'/images/5.png'} width={130} height={160} alt='blog Image'></Image> 
-          <span className='pl-4 py-4 text-left'>
+          <span className='w-full pl-4 py-4 text-left'>
             <p className='text-base uppercase font-semibold text-blue-text'>Language</p>
             <p className='text-base font-normal capitalize text-neutral-950'>how to crack interviews</p>
             <p className='text-xs py-5 text-neutral-600'>Fresh food directly from our restaurant ready coocked for you and you familly</p>
@@ -216,9 +216,9 @@ export default function Home() {
             <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
           </span>
         </div>
-        <div className='flex flex-row bg-neutral-50'>
+        <div className='flex flex-row bg-white'>
           <Image src={'/images/5.png'} width={130} height={160} alt='blog Image'></Image> 
-          <span className='pl-4 py-4 text-left'>
+          <span className='w-full pl-4 py-4 text-left'>
             <p className='text-base uppercase font-semibold text-blue-text'>Language</p>
             <p className='text-base font-normal capitalize text-neutral-950'>how to crack interviews</p>
             <p className='text-xs py-5 text-neutral-600'>Fresh food directly from our restaurant ready coocked for you and you familly</p>
@@ -227,9 +227,9 @@ export default function Home() {
             <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
           </span>
         </div>
-        <div className='flex flex-row bg-neutral-50'>
+        <div className='flex flex-row bg-white'>
           <Image src={'/images/5.png'} width={130} height={160} alt='blog Image'></Image> 
-          <span className='pl-4 py-4 text-left'>
+          <span className='w-full pl-4 py-4 text-left'>
             <p className='text-base uppercase font-semibold text-blue-text'>Language</p>
             <p className='text-base font-normal capitalize text-neutral-950'>how to crack interviews</p>
             <p className='text-xs py-5 text-neutral-600'>Fresh food directly from our restaurant ready coocked for you and you familly</p>
@@ -243,9 +243,9 @@ export default function Home() {
     <span className='absolute -mt-40 -ml-60 overflow-hidden'>
     <Image src={"/images/3.png"} height={400} width={400} alt='design'></Image>
     </span>
-    <div className="relative p-4 md:p-20 flex flex-col gap-4 md:flex-row font-Poppins">
+    <div className="relative p-4 md:p-20 flex flex-col justify-center gap-4 md:flex-row font-Poppins">
     <img className="h-64" src="/images/1212.png" alt="image"></img>
-    <div className="flex flex-col text-xs text-neutral-50 justify-between min-w-fit">
+    <div className="flex flex-col text-xs text-white justify-between min-w-fit">
       <span className="border border-bg-blue px-4 py-2 flex flex-row gap-4 justify-between">
         <p className="ps-2">01 What We Do</p>
         <span className='mt-auto'>
@@ -277,7 +277,7 @@ export default function Home() {
           </span>
       </span>
     </div>
-    <div className="flex flex-col px-2 py-1 text-neutral-50 text-left">
+    <div className="flex flex-col px-2 py-1 text-white text-left">
      <p className="text-sm">Education System</p>
      <p className="font-bold text-2xl py-2">Consulting Approch to Problem Solving Successful</p>
      <p className="text-xs py-2">I am glad that you have made it here to send a distress signal, & inform the Senate that all on board were killed. Dantooine. I’m not going to Alderaan. I really got to go. But that to me.</p>

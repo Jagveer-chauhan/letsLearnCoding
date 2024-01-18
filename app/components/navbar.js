@@ -28,7 +28,7 @@ export default function Navbar(){
     return(
         <div className='text-neutral-950 text-sm font-Poppins'>
           <nav className={`fixed w-full z-50 ${scrolled? "top-0" : "top-0 sm:top-8"} transition-all duration-1000 ease-in-out`}>
-            <div className={`justify-between  bg-neutral-50 ${scrolled? "w-full" : " w-full sm:w-11/12"} transition-all duration-1000 ease-in-out px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8`}>
+            <div className={`justify-between  bg-white ${scrolled? "w-full" : " w-full sm:w-11/12"} transition-all duration-1000 ease-in-out px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8`}>
               <div>
                 <div className="flex items-center justify-between md:block">
                   <Link href="/">
@@ -43,7 +43,7 @@ export default function Navbar(){
                       {navbar ? (
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-6 h-6 text-white"
+                          className="w-6 h-6 text-black"
                           viewBox="0 0 20 20"
                           fill="currentColor"
                         >
@@ -56,7 +56,7 @@ export default function Navbar(){
                       ) : (
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-6 h-6 text-white"
+                          className="w-6 h-6 text-black"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -80,22 +80,22 @@ export default function Navbar(){
                   }`}
                 >
                   <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                    <li className="text-white">
+                    <li className="text-black">
                       <Link href="/courses">
                         Courses
                       </Link>
                     </li>
-                    <li className="text-white">
+                    <li className="text-black">
                       <Link href="/blogs">
                         Blogs
                       </Link>
                     </li>
-                    <li className="text-white">
+                    <li className="text-black">
                       <Link href="/about">
                         About US
                       </Link>
                     </li>
-                    <li className="text-white">
+                    <li className="text-black">
                       <Link href="/contact">
                       Contact US
                       </Link>

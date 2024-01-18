@@ -255,7 +255,7 @@ export default function About() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-10 px-20">
         <div className="flex flex-col gap-7">
-          <p className="text-4xl text-bg-blue font-semibold">Edu Smart it's about mastering a timeless skill</p>
+          <p className="text-4xl text-bg-blue font-semibold">Edu Smart it&apos;s about mastering a timeless skill</p>
           <p className="text-sm text-neutral-300">cultivating new perspectives, and connecting with fascinating people from around the world.</p>
         </div>
         <div className="flex flex-col gap-4 px-12">

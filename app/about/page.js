@@ -51,7 +51,7 @@ export default function About() {
             What Will You Get?
           </span>
           <span className="text-sm font-Poppins text-neutral-50">
-          Choosing Lets Learn Coding opens the door to a multitude of opportunities and benefits. Here's what you can expect to gain from your educational journey with us
+          Choosing Lets Learn Coding opens the door to a multitude of opportunities and benefits. Here&apos;s what you can expect to gain from your educational journey with us
           </span>
           <div>
             <span className="py-2 bg-neutral-50 rounded-xl flex  flex-row">
@@ -131,7 +131,7 @@ export default function About() {
                 </p>
                 <ul className="py-2 px-4 list-disc">
                   <li className="text-xs">
-                  Gain career-ready skills with our support. We're committed to guiding you toward professional success
+                  Gain career-ready skills with our support. We&apos;re committed to guiding you toward professional success
                   </li>
                 </ul>
               </span>

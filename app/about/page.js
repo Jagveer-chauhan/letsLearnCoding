@@ -17,9 +17,7 @@ export default function About() {
             Purchase your awesome lessons and find your tutors
           </span>
           <span className="p-2 text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-            habitant a tincidunt cras accumsan integer suscipit. Libero accumsan
-            eget aliquet.
+          We believe in nurturing talents and honing skills that go beyond the conventional realms of education. Our institute is dedicated to creating an environment that encourages critical thinking, creativity, and personal growth
           </span>
           <span className="flex flex-row justify-start gap-10 py-6">
             <Link className="block px-6 py-2 rounded-md bg-btn-bg" href={"#"}>
@@ -39,8 +37,8 @@ export default function About() {
           ></Image>
         </div>
       </main>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-20 py-6">
-        <div className="">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-6 md:px-20 py-6">
+        <div className="flex justify-center">
           <Image
             src="/images/aboutUsModel.png"
             width={380}
@@ -48,14 +46,12 @@ export default function About() {
             alt="image"
           ></Image>
         </div>
-        <div className="flex flex-col justify-start gap-5 pe-14">
+        <div className="flex flex-col justify-start gap-5 lg:pe-10">
           <span className="text-4xl font-semibold font-Poppins text-neutral-50">
             What Will You Get?
           </span>
           <span className="text-sm font-Poppins text-neutral-50">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-            habitant a tincidunt cras accumsan integer suscipit. Libero accumsan
-            eget aliquet:
+          Choosing Lets Learn Coding opens the door to a multitude of opportunities and benefits. Here's what you can expect to gain from your educational journey with us
           </span>
           <div>
             <span className="py-2 bg-neutral-50 rounded-xl flex  flex-row">
@@ -75,12 +71,11 @@ export default function About() {
               </span>
               <span className="p-1">
                 <p className="text-sm font-medium">
-                  1-on-1 lessons in more than 150 languages
+                Expert Faculty Guidance
                 </p>
                 <ul className="py-2 px-4 list-disc">
                   <li className="text-xs">
-                    Learn from certified teachers with proven experience... read
-                    more
+                  Learn from dedicated professionals. Our faculty, rich in knowledge and industry experience, guides your academic journey towards success.
                   </li>
                 </ul>
               </span>
@@ -104,12 +99,11 @@ export default function About() {
               </span>
               <span className="p-1">
                 <p className="text-sm font-medium">
-                  1-on-1 lessons in more than 150 languages
+                Personalized Support
                 </p>
                 <ul className="py-2 px-4 list-disc">
                   <li className="text-xs">
-                    Learn from certified teachers with proven experience... read
-                    more
+                  Enjoy student-focused support-your success is our priority. Access personalized assistance and resources at every step.
                   </li>
                 </ul>
               </span>
@@ -133,12 +127,11 @@ export default function About() {
               </span>
               <span className="p-1">
                 <p className="text-sm font-medium">
-                  1-on-1 lessons in more than 150 languages
+                Career Development
                 </p>
                 <ul className="py-2 px-4 list-disc">
                   <li className="text-xs">
-                    Learn from certified teachers with proven experience... read
-                    more
+                  Gain career-ready skills with our support. We're committed to guiding you toward professional success
                   </li>
                 </ul>
               </span>

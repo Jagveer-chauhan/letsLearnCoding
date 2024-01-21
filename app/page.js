@@ -8,9 +8,9 @@ export default function Home() {
     <>
     <main className="bg-[url('/images/backgroundImage.png')] text-white hero">
     <div className="hero-overlay bg-opacity-40"></div>
-     <div className='hero-content flex flex-col h-[80vh] justify-center items-center font-Poppins font-normal text-center'>
-      <h1 className='text-4xl px-2 font-medium sm:text-5xl md:text-6xl lg:text-7xl'>Find Better Software <br/> Service Company</h1>
-      <h2 className='text-xl font-medium pt-6 px-2 sm:text-2xl md:text-2xl lg:text-3xl'>We will help you to feel better and enjoy every single day of your life</h2>
+     <div className='hero-content flex flex-col h-[80vh] justify-center items-center font-Poppins font-normal text-center pt-12'>
+      <h1 className='text-4xl px-2 font-medium sm:text-5xl md:text-6xl lg:text-7xl'>Empowering Students<br/>For a Bighter Tomorrow</h1>
+      <h2 className='text-xl font-medium pt-6 px-2 sm:text-2xl md:text-2xl lg:text-3xl'>Discover potential, shape a brighter future through quality education and innovation</h2>
      </div>
     </main>
     <div className='flex flex-col justify-evenly items-center bg-bg-blue py-3 px-6 font-Poppins md:flex-row text-white'>
@@ -19,8 +19,8 @@ export default function Home() {
           <Image src="/images/icons/icons (5).png" width={110} height={110} alt="image"></Image>
         </div>
         <div className='flex flex-col ps-2 text-center md:text-left'>
-          <span className='font-semibold text-sm'>Get Achieve New Level</span>
-          <span className='text-xs pt-2'>It is a longe established factey that reader will be follow readae cin page</span>
+          <span className='font-semibold text-sm'>Shape Futures</span>
+          <span className='text-xs pt-2'>Forge success with a strong foundation. Chart your journey towards achievement and fulfillment</span>
         </div> 
       </div>
       <div className='flex flex-col justify-center items-center md:flex-row'>
@@ -28,8 +28,8 @@ export default function Home() {
           <Image src="/images/icons/icons (6).png" width={110} height={110} alt="image"></Image>
         </div>
         <div className='flex flex-col ps-2 text-center md:text-left'>
-          <span className='font-semibold text-sm'>Get Achieve New Level</span>
-          <span className='text-xs pt-2'>It is a longe established factey that reader will be follow readae cin page</span>
+          <span className='font-semibold text-sm'>Spark Innovation</span>
+          <span className='text-xs pt-2'>Explore ideas between open books, lighting up your learning with innovation and forward-thinking</span>
         </div> 
       </div>
       <div className='flex flex-col justify-center items-center md:flex-row'>
@@ -37,8 +37,8 @@ export default function Home() {
           <Image src="/images/icons/icons (7).png" width={110} height={110} alt="image"></Image>
         </div>
         <div className='flex flex-col ps-2 text-center md:text-left'>
-          <span className='font-semibold text-sm'>Get Achieve New Level</span>
-          <span className='text-xs pt-2'>It is a longe established factey that reader will be follow readae cin page</span>
+          <span className='font-semibold text-sm'>Tech-Ready Graduates</span>
+          <span className='text-xs pt-2'>Tech-infused learning for tomorrow&apos;s leaders, connecting education and technology seamlessly</span>
         </div> 
       </div>
     </div>
@@ -142,7 +142,7 @@ export default function Home() {
     </span>
     <div className="text-center font-Poppins relative text-white">
       <h4 className='text-4xl'>Explore Our Popular Courses</h4>
-      <p className='text-sm pt-4 px-10'>Jeffrey crikey victoria sponge mush spiffing super arse over tit matie boy smashing. The little rotter off his nut codswallop.!</p>
+      <p className='text-sm pt-4 px-10'>Embark on a learning journey that aligns with your goals. Our popular courses offer diverse opportunities, empowering you to acquire skills, gain knowledge, and pave your way to success</p>
       <div className='px-5 py-10 lg:py-20'>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 m-auto'>
         <div className='rounded-xl overflow-hidden m-auto bg-dark-blue'>
@@ -192,7 +192,7 @@ export default function Home() {
     </span> */}
     <div className="relative text-center font-Poppins text-white z-10">
       <h4 className='text-4xl'>Explore Our Blogs</h4>
-      <p className='text-sm pt-4 px-10'>I am glad that you have made it here to send a distress signal, & inform the Senate that all on board</p>
+      <p className='text-sm pt-4 px-10'>Dive into a world of insightful content. Our blogs cover a spectrum of topics, providing valuable perspectives, practical advice, and engaging narratives to enrich your knowledge and experience</p>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10 m-auto px-5 py-10 lg:px-20'>
         <div className='flex flex-row bg-white'>
           <Image src={'/images/5.png'} width={130} height={160} alt='blog Image'></Image> 

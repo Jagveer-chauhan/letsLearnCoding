@@ -12,7 +12,7 @@ export default function Contact() {
   const [isQueryFocused, setQueryFocused] = useState(false);
   return (
     <>
-      <div className="p-10 pt-32 md:p-16 lg:p-40 font-Poppins">
+      <div className="p-10 pt-16 md:p-16 lg:px-40 lg:py-16 font-Poppins">
         <div className="p-6 sm:p-12 flex flex-col justify-center bg-white rounded-md">
           <h1 className="text-xl text-bg-blue font-bold underline underline-offset-8 text-center">Get In Touch</h1>
           <p className="text-lg font-semibold text-neutral-800 py-5">Leave us a message</p>

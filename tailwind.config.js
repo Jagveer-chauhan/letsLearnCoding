@@ -20,6 +20,7 @@ module.exports = {
       'blue-text':'#5863F8',
       'white': '#fff',
       'black': '#000',
+      'bg-dark':'#171139'
     },
   },
   plugins: [require("daisyui")],

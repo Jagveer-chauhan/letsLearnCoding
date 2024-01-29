@@ -1,9 +1,24 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faCalendarAlt,
+  faCalendarDay,
+  faCalendarDays,
+  faCalendarTimes,
   faCircle,
   faCircleChevronRight,
+  faComputer,
+  faHouseLaptop,
+  faLaptop,
+  faLaptopCode,
+  faPerson,
+  faPersonCircleMinus,
   faQuoteLeft,
   faStar,
+  faUser,
+  faUserAlt,
+  faUserAltSlash,
+  faUserAstronaut,
+  faUserCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +26,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <>
-      <main className="grid grid-cols-1 md:grid-cols-2 gap-6 font-Poppins text-neutral-50 px-10 pt-10">
+      <main className="grid grid-cols-1 md:grid-cols-2 gap-6 font-Poppins text-neutral-50 px-10">
         <div className="px-10 py-24 flex flex-col">
           <span className="p-2 text-4xl font-semibold ">
             Purchase your awesome lessons and find your tutors
@@ -54,8 +69,8 @@ export default function About() {
           Choosing Lets Learn Coding opens the door to a multitude of opportunities and benefits. Here&apos;s what you can expect to gain from your educational journey with us
           </span>
           <div>
-            <span className="py-2 bg-neutral-50 rounded-xl flex  flex-row">
-              <span className="p-1">
+            <span className="py-1 px-2 bg-neutral-50 rounded-xl flex  flex-row">
+              <span className="px-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="52"
@@ -70,10 +85,10 @@ export default function About() {
                 </svg>
               </span>
               <span className="p-1">
-                <p className="text-sm font-medium">
+                <p className="text-sm font-semibold text-bg-blue">
                 Expert Faculty Guidance
                 </p>
-                <ul className="py-2 px-4 list-disc">
+                <ul className="py-1 px-4 list-disc">
                   <li className="text-xs">
                   Learn from dedicated professionals. Our faculty, rich in knowledge and industry experience, guides your academic journey towards success.
                   </li>
@@ -82,8 +97,8 @@ export default function About() {
             </span>
           </div>
           <div>
-            <span className="py-2 bg-neutral-50 rounded-xl flex  flex-row">
-              <span className="p-1">
+            <span className="py-1 px-2 bg-neutral-50 rounded-xl flex  flex-row">
+              <span className="px-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="52"
@@ -98,10 +113,10 @@ export default function About() {
                 </svg>
               </span>
               <span className="p-1">
-                <p className="text-sm font-medium">
+                <p className="text-sm font-semibold text-bg-blue">
                 Personalized Support
                 </p>
-                <ul className="py-2 px-4 list-disc">
+                <ul className="py-1 px-4 list-disc">
                   <li className="text-xs">
                   Enjoy student-focused support-your success is our priority. Access personalized assistance and resources at every step.
                   </li>
@@ -110,8 +125,8 @@ export default function About() {
             </span>
           </div>
           <div>
-            <span className="py-2 bg-neutral-50 rounded-xl flex  flex-row">
-              <span className="p-1">
+            <span className="py-1 px-2 bg-neutral-50 rounded-xl flex  flex-row">
+              <span className="px-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="52"
@@ -126,10 +141,10 @@ export default function About() {
                 </svg>
               </span>
               <span className="p-1">
-                <p className="text-sm font-medium">
+                <p className="text-sm font-semibold text-bg-blue">
                 Career Development
                 </p>
-                <ul className="py-2 px-4 list-disc">
+                <ul className="py-1 px-4 list-disc">
                   <li className="text-xs">
                   Gain career-ready skills with our support. We&apos;re committed to guiding you toward professional success
                   </li>
@@ -142,97 +157,53 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-20 py-12">
         <div className="flex flex-col justify-start gap-5">
           <span className="text-4xl font-semibold font-Poppins text-neutral-50">
-          Here’s how it <itex className="text-bg-blue">works</itex>
+          Here&apos;s how it <itex className="text-bg-blue">works</itex>
           </span>
           <span className="text-sm font-Poppins text-neutral-50">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-            habitant a tincidunt cras accumsan integer suscipit. Libero accumsan
-            eget aliquet:
+          Discover the simplicity of joining Lets Learn Coding. We have streamlined the admission and learning process to ensure a smooth and enriching experience for every student.
           </span>
           <div>
             <span className="py-2 bg-neutral-50 rounded-xl flex  flex-row">
-              <span className="p-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="52"
-                  height="52"
-                  viewBox="0 0 52 52"
-                  fill="none"
-                >
-                  <path
-                    d="M35.4035 4.33301C42.7485 4.33301 47.6668 9.48968 47.6668 17.1597V34.8635C47.6668 42.5097 42.7485 47.6663 35.4035 47.6663H16.6185C9.2735 47.6663 4.3335 42.5097 4.3335 34.8635V17.1597C4.3335 9.48968 9.2735 4.33301 16.6185 4.33301H35.4035ZM35.0568 19.4997C34.3202 18.763 33.1068 18.763 32.3702 19.4997L23.4218 28.448L19.6302 24.6563C18.8935 23.9197 17.6802 23.9197 16.9435 24.6563C16.2068 25.393 16.2068 26.5847 16.9435 27.343L22.1002 32.478C22.4685 32.8463 22.9452 33.0197 23.4218 33.0197C23.9202 33.0197 24.3968 32.8463 24.7652 32.478L35.0568 22.1863C35.7935 21.4497 35.7935 20.258 35.0568 19.4997Z"
-                    fill="#5035F1"
-                  />
-                </svg>
+              <span className="p-1 px-2">
+                <FontAwesomeIcon className="text-bg-blue text-4xl" icon={faUserCircle}></FontAwesomeIcon>
               </span>
               <span className="p-1">
-                <p className="text-sm font-medium">
-                  1-on-1 lessons in more than 150 languages
+                <p className="text-sm text-bg-blue font-semibold">
+                  Find a Tutor
                 </p>
-                <ul className="py-2 px-4 list-disc">
-                  <li className="text-xs">
-                    Learn from certified teachers with proven experience... read
-                    more
-                  </li>
-                </ul>
+                  <p className="py-2 text-xs">
+                  Find a tutor Choose your ideal teacher from over 10,000 qualified language tutors.
+                  </p>
               </span>
             </span>
           </div>
           <div>
             <span className="py-2 bg-neutral-50 rounded-xl flex  flex-row">
-              <span className="p-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="52"
-                  height="52"
-                  viewBox="0 0 52 52"
-                  fill="none"
-                >
-                  <path
-                    d="M35.4035 4.33301C42.7485 4.33301 47.6668 9.48968 47.6668 17.1597V34.8635C47.6668 42.5097 42.7485 47.6663 35.4035 47.6663H16.6185C9.2735 47.6663 4.3335 42.5097 4.3335 34.8635V17.1597C4.3335 9.48968 9.2735 4.33301 16.6185 4.33301H35.4035ZM35.0568 19.4997C34.3202 18.763 33.1068 18.763 32.3702 19.4997L23.4218 28.448L19.6302 24.6563C18.8935 23.9197 17.6802 23.9197 16.9435 24.6563C16.2068 25.393 16.2068 26.5847 16.9435 27.343L22.1002 32.478C22.4685 32.8463 22.9452 33.0197 23.4218 33.0197C23.9202 33.0197 24.3968 32.8463 24.7652 32.478L35.0568 22.1863C35.7935 21.4497 35.7935 20.258 35.0568 19.4997Z"
-                    fill="#5035F1"
-                  />
-                </svg>
+              <span className="p-1 px-2">
+                <FontAwesomeIcon className="text-bg-blue text-4xl" icon={faCalendarDays}></FontAwesomeIcon>
               </span>
               <span className="p-1">
-                <p className="text-sm font-medium">
-                  1-on-1 lessons in more than 150 languages
+                <p className="text-sm text-bg-blue font-semibold">
+                  Book a Lesson
                 </p>
-                <ul className="py-2 px-4 list-disc">
-                  <li className="text-xs">
-                    Learn from certified teachers with proven experience... read
-                    more
-                  </li>
-                </ul>
+                  <p className="py-2 text-xs">
+                  Book a lesson Select a lesson time and add it to their calendar.
+                  </p>
               </span>
             </span>
           </div>
           <div>
             <span className="py-2 bg-neutral-50 rounded-xl flex  flex-row">
-              <span className="p-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="52"
-                  height="52"
-                  viewBox="0 0 52 52"
-                  fill="none"
-                >
-                  <path
-                    d="M35.4035 4.33301C42.7485 4.33301 47.6668 9.48968 47.6668 17.1597V34.8635C47.6668 42.5097 42.7485 47.6663 35.4035 47.6663H16.6185C9.2735 47.6663 4.3335 42.5097 4.3335 34.8635V17.1597C4.3335 9.48968 9.2735 4.33301 16.6185 4.33301H35.4035ZM35.0568 19.4997C34.3202 18.763 33.1068 18.763 32.3702 19.4997L23.4218 28.448L19.6302 24.6563C18.8935 23.9197 17.6802 23.9197 16.9435 24.6563C16.2068 25.393 16.2068 26.5847 16.9435 27.343L22.1002 32.478C22.4685 32.8463 22.9452 33.0197 23.4218 33.0197C23.9202 33.0197 24.3968 32.8463 24.7652 32.478L35.0568 22.1863C35.7935 21.4497 35.7935 20.258 35.0568 19.4997Z"
-                    fill="#5035F1"
-                  />
-                </svg>
+              <span className="p-1 px-2">
+                <FontAwesomeIcon className="text-bg-blue text-4xl" icon={faLaptopCode}></FontAwesomeIcon>
               </span>
               <span className="p-1">
-                <p className="text-sm font-medium">
-                  1-on-1 lessons in more than 150 languages
+                <p className="text-sm text-bg-blue font-semibold">
+                  Start Learning
                 </p>
-                <ul className="py-2 px-4 list-disc">
-                  <li className="text-xs">
-                    Learn from certified teachers with proven experience... read
-                    more
-                  </li>
-                </ul>
+                  <p className="py-2 text-xs">
+                  Start learning Simple as that, you are learning a language.
+                  </p>
               </span>
             </span>
           </div>
@@ -289,10 +260,10 @@ export default function About() {
             <span className="flex flex-row">
               <span className="flex flex-row -space-x-4">
                 <Image src={"/images/Item.png"} height={40} width={40} alt="icon"></Image>
-                <Image src={"/images/Item.png"} height={40} width={40} alt="icon"></Image>
-                <Image src={"/images/Item.png"} height={40} width={40} alt="icon"></Image>
-                <Image src={"/images/Item.png"} height={40} width={40} alt="icon"></Image>
-                <Image src={"/images/Item.png"} height={40} width={40} alt="icon"></Image>
+                <Image src={"/images/Item-1.png"} height={40} width={40} alt="icon"></Image>
+                <Image src={"/images/Item-2.png"} height={40} width={40} alt="icon"></Image>
+                <Image src={"/images/Item-3.png"} height={40} width={40} alt="icon"></Image>
+                <Image src={"/images/Item-4.png"} height={40} width={40} alt="icon"></Image>
               </span>
               <Link href={"#"} className="ps-2 my-auto text-neutral-50 underline text-xs">and others</Link>
             </span>

@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         "Poppins": ["Poppins", ...DefaultTheme.fontFamily.sans],
+        "Montserrat": ["Montserrat", ...DefaultTheme.fontFamily.sans],
       },
     },
     colors:{
@@ -18,9 +19,14 @@ module.exports = {
       'dark-blue':'#0C0E2B',
       'btn-bg':'#5035F1',
       'blue-text':'#5863F8',
-      'white': '#fff',
+      'white': '#ffffff',
       'black': '#000',
-      'bg-dark':'#171139'
+      'bg-dark':'#171139',
+      'bg-dark-grey':'#EEEBFF99',
+      'bg-light-grey':'#EEEBFF',
+      'dark-text':'#1C3554',
+      'dark-blue-text':'#1C3554',
+      'light-blue':'#4586D6'
     },
   },
   plugins: [require("daisyui")],

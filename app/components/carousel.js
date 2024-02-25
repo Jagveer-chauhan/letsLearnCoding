@@ -84,7 +84,7 @@ const StudentReview = ({ review }) => {
   const {name, description} = review;
   return (
     <div className="bg-white flex flex-col gap-2 p-4 m-2 text-left justify-center rounded-lg font-Poppins">
-      <div className="p-3 text-lg text-black">"{description}"</div>
+      <div className="p-3 text-lg text-black">&quot;{description}&quot;</div>
       <div className="flex flex-row gap-2 ps-4 justify-start">
         <span className="my-auto">
         <FontAwesomeIcon icon={faUserCircle} className="text-4xl text-neutral-500"></FontAwesomeIcon>

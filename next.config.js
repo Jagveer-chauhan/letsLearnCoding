@@ -2,8 +2,13 @@
 const nextConfig = {
     pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
     images: {
-        domains: ['localhost'],
-      },
+      remotePatterns: [
+        {
+          protocol: 'http',
+          hostname: 'localhost',
+        },
+      ],
+    },
 }
 
 module.exports = nextConfig

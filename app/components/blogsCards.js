@@ -5,8 +5,8 @@ import Link from "next/link";
 const BlogCards = (data) => {
   const {blogsData} = data;
     return (
-      blogsData.map((BlogData) => (
-          <BlogCard BlogData ={BlogData} />
+      blogsData.map((BlogData, index) => (
+          <BlogCard key={index} BlogData ={BlogData} />
         ))
     );
   };

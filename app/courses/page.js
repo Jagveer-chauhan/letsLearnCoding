@@ -37,7 +37,7 @@ export default async function CourseList() {
       <div className="p-4 sm:p-8 md:p-16 text-white">
         <div className="flex flex-col gap-5 pb-12">
           <h1 className="font-semibold text-5xl font-Poppins">Our Professional Courses</h1>
-          <p className="text-sm">Welcome to our courses, where innovation meets opportunity! Dive into the dynamic world of technology with our comprehensive range of IT courses designed to equip you with the skills and knowledge needed to thrive in the digital age. Whether you're a beginner looking to learn the basics of programming or an experienced professional aiming to specialize in cybersecurity or data science, we have something for everyone.</p>
+          <p className="text-sm">Welcome to our courses, where innovation meets opportunity! Dive into the dynamic world of technology with our comprehensive range of IT courses designed to equip you with the skills and knowledge needed to thrive in the digital age. Whether you&apos;re a beginner looking to learn the basics of programming or an experienced professional aiming to specialize in cybersecurity or data science, we have something for everyone.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10 p-9 sm:p-8 md:p-4 lg:p-0">
         {coursesList.map((item, index) => (

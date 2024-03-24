@@ -3,8 +3,8 @@ import Link from "next/link";
 const CourseCards = (data) => {
   const {coursesData} = data;
     return (
-      coursesData.map((course) => (
-          <CourseCard courseData ={course} />
+      coursesData.map((course, index) => (
+          <CourseCard key={index} courseData ={course} />
         ))
     );
   };

@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faEnvelope, faF, faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope, faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 import {faFacebookF, faInstagram, faTelegram, faTelegramPlane, faThreads, faTwitter, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -21,17 +21,17 @@ export default function Contact() {
               <div className="flex flex-col gap-4 justify-between">
                 <div className='my-2 relative w-full'>
                   <label className={`absolute transition-all duration-300 ${isNameFocused ? 'text-xs text-black -m-3 ms-3 p-1 bg-white' : 'text-base text-neutral-400 ms-3 mt-2'}`}>{isNameFocused ? 'Name' :'Enter Your Name'}</label>
-                  <input type="text" className={`w-full py-2 px-4 border-neutral-400 border-[1.5px] rounded-md focus:outline-none`}
+                  <input type="text" className={`w-full py-2 px-4 bg-white text-black border-neutral-400 border-[1.5px] rounded-md focus:outline-none`}
                   onFocus={() => setNameFocused(true)} onBlur={(e) => !e.target.value && setNameFocused(false)}/>
                 </div>
                 <div className='my-2 relative w-full'>
                   <label className={`absolute transition-all duration-300 ${isEmailFocused ? 'text-xs text-black -m-3 ms-3 p-1 bg-white' : 'text-base text-neutral-400 ms-3 mt-2'}`}>{isEmailFocused ? 'Email' :'Enter Your Email Address'}</label>
-                  <input type="email" className={`w-full py-2 px-4 border-neutral-400 border-[1.5px] rounded-md focus:outline-none`}
+                  <input type="email" className={`w-full py-2 px-4 bg-white text-black border-neutral-400 border-[1.5px] rounded-md focus:outline-none`}
                     onFocus={() => setEmailFocused(true)} onBlur={(e) => !e.target.value && setEmailFocused(false)}/>
                 </div>
                 <div className='my-2 relative w-full'>
                   <label className={`absolute transition-all duration-300 ${isQueryFocused ? 'text-xs text-black -m-3 ms-3 p-1 bg-white' : 'text-base text-neutral-400 ms-3 mt-2'}`}>{isQueryFocused ? 'Message' :'Enter Your Message'}</label>
-                  <textarea className={`w-full py-2 px-4 border-neutral-400 border-[1.5px] rounded-md focus:outline-none`} rows={5}
+                  <textarea className={`w-full py-2 px-4 bg-white text-black border-neutral-400 border-[1.5px] rounded-md focus:outline-none`} rows={5}
                     onFocus={() => setQueryFocused(true)} onBlur={(e) => !e.target.value && setQueryFocused(false)}/>
                 </div>
                 <button type='submit' className='w-full bg-bg-blue text-white p-2 font-semibold'>Send</button>

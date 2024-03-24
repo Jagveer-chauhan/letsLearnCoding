@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight, faArrowAltCircleLeft, faArrowCircleLeft, faArrowCircleRight, faUserAlt, faUserAltSlash, faUserAstronaut, faUserCircle, faUserClock } from "@fortawesome/free-solid-svg-icons";
+import {faArrowCircleLeft, faArrowCircleRight,faUserCircle} from "@fortawesome/free-solid-svg-icons";
 // import Image from "next/image";
 
 function ReviewSlider (studentReviews)
@@ -73,7 +73,7 @@ function ReviewSlider (studentReviews)
                 reviews.map((element, index) => (
                   <StudentReview key={index} review={element} />
                   ))
-                }
+              }
             </Slider>
           </div>
         </div>

@@ -223,7 +223,7 @@ export default async function Home() {
           </AccordionSummary>
           <AccordionDetails className='font-Poppins bg-bg-dark text-white'>
             <div className="flex flex-col px-2 py-1 text-white text-left">
-            <p className="text-sm">Here's why you should choose us:</p>
+            <p className="text-sm">Here&apos;s why you should choose us:</p>
             <p className="font-bold text-2xl py-2">Pick us for our focus on practical skills and real-world applications.</p>
             <p className="text-xs py-2">At Lets Learn Coding, we pride ourselves on offering a unique blend of quality education, industry expertise, and personalized support to help our students succeed in their IT careers.</p>
             <div className="pt-4">
@@ -245,7 +245,7 @@ export default async function Home() {
           </AccordionSummary>
           <AccordionDetails className='font-Poppins bg-bg-dark text-white'>
             <div className="flex flex-col px-2 py-1 text-white text-left">
-            <p className="text-sm">Here's the scoop!</p>
+            <p className="text-sm">Here&apos;s the scoop!</p>
             <p className="font-bold text-2xl py-2">Explore excited domains we provide.</p>
             <p className="text-xs py-2">We offer a comprehensive menu of IT programs and courses designed to launch your tech career.</p>
             <div className="pt-4">
@@ -266,7 +266,7 @@ export default async function Home() {
             <div className="flex flex-col px-2 py-1 text-white text-left">
             <p className="text-sm">Ready to Set Sail?</p>
             <p className="font-bold text-2xl py-2">Prerequisites vary depending on the program you choose.</p>
-            <p className="text-xs py-2">We don't have any specific prerequisites for enrolling in our programs. However, if you have some basic computer knowledge, it will be beneficial for your learning experience.</p>
+            <p className="text-xs py-2">We don&apos;t have any specific prerequisites for enrolling in our programs. However, if you have some basic computer knowledge, it will be beneficial for your learning experience.</p>
             </div>
           </AccordionDetails>
         </Accordion>
@@ -278,7 +278,7 @@ export default async function Home() {
             <div className="flex flex-col px-2 py-1 text-white text-left">
             <p className="text-sm">Gear Up for Success!</p>
             <p className="font-bold text-2xl py-2">Our programs open doors to exciting IT careers.</p>
-            <p className="text-xs py-2">Launch your IT career with our programs!  We'll equip you with the skills for high-demand jobs in areas like website development, software development, advanced Excel and more.</p>
+            <p className="text-xs py-2">Launch your IT career with our programs!  We&apos;ll equip you with the skills for high-demand jobs in areas like website development, software development, advanced Excel and more.</p>
             <div className="pt-4">
               <ul className="list-none text-xs grid grid-cols-2 gap-3">
                 <li className="">Website Development</li>

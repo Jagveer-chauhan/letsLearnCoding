@@ -12,7 +12,7 @@ const AccordionComponent = ({ title, content }) => {
       </AccordionSummary>
       <AccordionDetails className='font-Poppins'>
         <ul className='list-disc ps-8 pt-1'>
-          {listPoints.map((point,i) => (
+          {listPoints?.map((point,i) => (
               <li key={i}>{point}</li>
             ))}
         </ul>

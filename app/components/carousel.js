@@ -70,7 +70,7 @@ function ReviewSlider (studentReviews)
           <div className="p-3">
             <Slider ref={sliderRef} {...settings}>
               {
-                reviews.map((element, index) => (
+                reviews?.map((element, index) => (
                   <StudentReview key={index} review={element} />
                   ))
               }

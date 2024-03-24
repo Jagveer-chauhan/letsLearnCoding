@@ -38,7 +38,7 @@ export default async function CourseDetails(context)
     );
   }
 
-  const courseContent = courseData.course_content.map((item) => ({
+  const courseContent = courseData.course_content?.map((item) => ({
     title: item.heading,
     content: item.pointers,
     expanded: false,
@@ -62,7 +62,7 @@ export default async function CourseDetails(context)
         <p className="text-sm text-white">{courseData.description}</p>
         <h4 className="text-4xl font-semibold text-white capitalize">Course Content</h4>
         <div className="">
-            {courseContent.map((item, index) => (
+            {courseContent?.map((item, index) => (
             <AccordionComponent key={index} {...item} />
           ))}
         </div>

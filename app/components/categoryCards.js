@@ -2,7 +2,7 @@ import Image from "next/image";
 const CategoryCards = (data) => {
   const {categoryData} = data;
     return (
-        categoryData.map((category, index) => (
+        categoryData?.map((category, index) => (
           <CourseCard key={index} name={category.name} count ={category.count} />
         ))
     );

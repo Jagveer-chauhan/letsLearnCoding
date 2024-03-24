@@ -66,7 +66,7 @@ export default async function CourseList() {
         <div className="px-3 py-10 sm:px-10 md:px-20 font-Poppins">
           <h3 className="text-xl sm:text-2xl md:text-3xl pb-10">Latest Blogs</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-10">
-          {blogsList.map((item, index) => (
+          {blogsList?.map((item, index) => (
               <BlogCard key={index} blog={item}/>
             ))}
           </div>

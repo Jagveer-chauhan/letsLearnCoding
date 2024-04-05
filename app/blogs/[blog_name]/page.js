@@ -52,11 +52,12 @@ export default async function BlogDetails(context)
       <div className="flex flex-col md:flex-row gap-6 px-20 py-4">
         <div className="flex flex-col gap-6 w-11/12">
           <div className="w-full relative h-[60vh]">
-            <Image src={blogData.image} fill={true}></Image>
+            <Image src={blogData.image} fill={true} alt={blogData.title} priority={true}></Image>
           </div>
           <div className="font-Poppins text-white flex flex-col gap-4">
             <h2 className="font-semibold text-3xl">{blogData.title}</h2>
-            <p className="text-neutral-200">{blogData.description}</p>
+            <div dangerouslySetInnerHTML={{ __html:blogData.description}}></div>
+            {/* <div className="text-neutral-200">{blogData.description}</div> */}
           </div>
         </div>
         <div>

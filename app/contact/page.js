@@ -59,7 +59,7 @@ export default function Contact() {
               <Link href={'https://t.me/letslearncoding2023'}><FontAwesomeIcon icon={faTelegramPlane} className='text-xl text-neutral-900'></FontAwesomeIcon></Link>
             </span>
             <div className='w-full h-full pt-2'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.619623024172!2d77.31963067408114!3d28.340110797302334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdbca9fd8f1c5%3A0xa193201971bbe020!2sLetsLearnCoding!5e0!3m2!1sen!2sin!4v1705594066276!5m2!1sen!2sin" width={"100%"} height={"100%"} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.619623024172!2d77.31963067408114!3d28.340110797302334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdbca9fd8f1c5%3A0xa193201971bbe020!2sLetsLearnCoding!5e0!3m2!1sen!2sin!4v1705594066276!5m2!1sen!2sin" width={"100%"} height={"100%"} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title='Lets Learn Coding Location'/>
             </div>
           </div>
           </div>

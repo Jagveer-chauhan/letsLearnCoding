@@ -37,6 +37,7 @@ export default function About() {
             width={490}
             height={570}
             alt="image"
+            priority={true}
           ></Image>
         </div>
       </main>
@@ -77,7 +78,7 @@ export default function About() {
                 Expert Faculty Guidance
                 </p>
                 <ul className="py-1 px-4 list-disc">
-                  <li className="text-xs">
+                  <li className="text-xs text-neutral-600">
                   Learn from dedicated professionals. Our faculty, rich in knowledge and industry experience, guides your academic journey towards success.
                   </li>
                 </ul>
@@ -105,7 +106,7 @@ export default function About() {
                 Personalized Support
                 </p>
                 <ul className="py-1 px-4 list-disc">
-                  <li className="text-xs">
+                  <li className="text-xs text-neutral-600">
                   Enjoy student-focused support-your success is our priority. Access personalized assistance and resources at every step.
                   </li>
                 </ul>
@@ -133,7 +134,7 @@ export default function About() {
                 Career Development
                 </p>
                 <ul className="py-1 px-4 list-disc">
-                  <li className="text-xs">
+                  <li className="text-xs text-neutral-600">
                   Gain career-ready skills with our support. We&apos;re committed to guiding you toward professional success
                   </li>
                 </ul>
@@ -159,7 +160,7 @@ export default function About() {
                 <p className="text-sm text-bg-blue font-semibold">
                   Find a Tutor
                 </p>
-                  <p className="py-2 text-xs">
+                  <p className="py-2 text-xs text-neutral-600">
                   Find a tutor Choose your ideal teacher from over 10,000 qualified language tutors.
                   </p>
               </span>
@@ -174,7 +175,7 @@ export default function About() {
                 <p className="text-sm text-bg-blue font-semibold">
                   Book a Lesson
                 </p>
-                  <p className="py-2 text-xs">
+                  <p className="py-2 text-xs text-neutral-600">
                   Book a lesson Select a lesson time and add it to their calendar.
                   </p>
               </span>
@@ -189,7 +190,7 @@ export default function About() {
                 <p className="text-sm text-bg-blue font-semibold">
                   Start Learning
                 </p>
-                  <p className="py-2 text-xs">
+                  <p className="py-2 text-xs text-neutral-600">
                   Start learning Simple as that, you are learning a language.
                   </p>
               </span>

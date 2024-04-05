@@ -44,7 +44,7 @@ export default async function CourseList() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 p-3 sm:p-10 gap-10 m-auto">
           <div className="m-auto">
-            <Link href={`/blogs/${firstBlog.slug}`}><Image className="rounded-2xl hover:scale-110 transition-all duration-500" src={firstBlog.image} height={300} width={500}></Image></Link>
+            <Link href={`/blogs/${firstBlog.slug}`}><Image className="rounded-2xl hover:scale-110 transition-all duration-500" src={firstBlog.image} height={300} width={500} alt={firstBlog.title} priority={true}></Image></Link>
           </div>
           <div className="flex flex-col font-Poppins justify-between text-white p-2">
             <span className="flex flex-row gap-2 py-1">
@@ -81,7 +81,7 @@ const BlogCard = ({blog}) =>{
   return(
     <div className="flex flex-col justify-between gap-2 px-4">
       <div className="mx-auto py-4">
-        <Link href={`/blogs/${slug}`}><Image className="rounded-lg hover:scale-110 transition-all duration-500" src={image} alt={"title"} height={350} width={500}></Image></Link>
+        <Link href={`/blogs/${slug}`}><Image className="rounded-lg hover:scale-110 transition-all duration-500" src={image} alt={title} height={350} width={500}></Image></Link>
       </div> 
       <span className="flex flex-row gap-2 py-1">
         <FontAwesomeIcon className="text-base" icon={faCalendarDays}></FontAwesomeIcon>

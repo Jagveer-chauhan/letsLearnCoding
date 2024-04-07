@@ -40,7 +40,7 @@ export default async function Home() {
       <h2 className='text-xl font-medium pt-6 px-2 sm:text-2xl md:text-2xl lg:text-3xl'>Discover potential, shape a brighter future through quality education and innovation</h2>
      </div>
     </main>
-    <div className='flex flex-col justify-evenly items-center bg-bg-blue py-3 px-6 font-Poppins md:flex-row text-white'>
+    <div className='flex flex-col justify-evenly items-center bg-bg-blue py-3 px-6 font-Poppins md:flex-row text-white shadow-md shadow-black'>
       <div className='flex flex-col justify-center items-center md:flex-row'>
         <div className='image-full'>
           <Image src="/images/icons/icons (5).png" width={110} height={110} alt="image"></Image>
@@ -85,18 +85,18 @@ export default async function Home() {
         <h3 className='text-3xl font-medium'>Best IT Courses<br/>& Upgrade Your Skills</h3>
         <p className='text-xs py-4 pb-10'>Choose from 10+ IT courses additions published <br/> Every month & upgrade your skills. Get started with us.</p>
         <span className='flex justify-between'>
-        <Link  className='text-xs px-7 py-2 btn font-bold bg-white hover:bg-btn-bg text-bg-blue hover:text-white border-none' href={'/contact'}>Get Started</Link>
+        <Link  className='text-xs px-7 py-2 btn font-bold bg-white hover:bg-btn-bg text-bg-blue hover:text-white border-none uppercase' href={'/contact'}>Get Started</Link>
         <Image className='mt-[-22px]' src={"/images/icons/6.png"} width={150} height={150} alt='icon'></Image>
         </span>
       </div>
       <div className='p-1 sm:px-10 m-auto'>
-        <span className='flex flex-row bg-dark-blue pt-1 px-2 w-28 -translate-x-8 translate-y-4  rounded-t-lg rounded-bl-lg z-10'>
+        <span className='flex flex-row bg-dark-blue pt-1 px-2 w-28 -translate-x-8 translate-y-4  rounded-t-lg rounded-bl-lg z-10 shadow-md shadow-black'>
         <Image src={"/images/icons/marketing.png"} width={40} height={40} alt='icon'></Image>
         <p className='ps-2 text-xs'>10+ Courses</p>
         </span>
-        <Image className=' ms-0 mt-0' src={'/images/4.png'} height={280} width={240} alt='image'></Image>
-        <Image className ='translate-x-[6.5rem] -translate-y-14' src={'/images/5.png'} height={200} width={160} alt='image'></Image>
-        <span className='flex flex-row bg-dark-blue pt-1 px-2 -translate-y-32 translate-x-2 w-28 rounded-tl-lg rounded-b-lg'>
+        <Image className=' ms-0 mt-0 shadow-lg shadow-black' src={'/images/4.png'} height={280} width={240} alt='image'></Image>
+        <Image className ='translate-x-[6.5rem] -translate-y-14 shadow-lg shadow-black' src={'/images/5.png'} height={200} width={160} alt='image'></Image>
+        <span className='flex flex-row bg-dark-blue pt-1 px-2 -translate-y-32 translate-x-2 w-28 rounded-tl-lg rounded-b-lg shadow-md shadow-black'>
         <Image src={"/images/icons/marketing.png"} width={40} height={40} alt='icon'></Image>
         <p className='ps-2 text-xs'>Expert Teachers</p>
         </span>
@@ -111,45 +111,6 @@ export default async function Home() {
       <div className='px-5 py-10 lg:py-20 md:px-14 lg:px-28 xl:px-44'>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 m-auto'>
         <CourseCards coursesData={courses}/>
-        {/* <div className='rounded-xl overflow-hidden m-auto bg-dark-blue'>
-          <img className='object-cover' src='/images/6.png' width="100%" height="auto" alt='course image'/>
-          <p className='bg-bg-blue rounded-full m-auto text-sm w-fit py-px px-4 -translate-y-3'>Development</p>
-          <div className='px-5 py-4 text-left'>
-            <div className='font-medium text-xl mb-2'>Full Stack Development Course</div>
-            <p className='text-sm'>(4.5 ratings)</p>
-            <hr className='my-2'></hr>
-            <div className='flex flex-row justify-between'>
-              <p className='text-xs'>20+ Students</p>
-              <p className='text-xs'>Enroll Now</p>
-            </div>
-          </div>
-        </div>
-        <div className='rounded-xl overflow-hidden m-auto bg-dark-blue'>
-          <img className='object-cover' src='/images/6.png' width="100%" height="auto" alt='course image'/>
-          <p className='bg-bg-blue rounded-full m-auto text-sm w-fit py-px px-4 -translate-y-3'>Development</p>
-          <div className='px-5 py-4 text-left'>
-            <div className='font-medium text-xl mb-2'>Full Stack Development Course</div>
-            <p className='text-sm'>(4.5 ratings)</p>
-            <hr className='my-2'></hr>
-            <div className='flex flex-row justify-between'>
-              <p className='text-xs'>20+ Students</p>
-              <p className='text-xs'>Enroll Now</p>
-            </div>
-          </div>
-        </div>
-        <div className='rounded-xl overflow-hidden m-auto bg-dark-blue'>
-          <img className='object-cover' src='/images/6.png' width="100%" height="auto" alt='course image'/>
-          <p className='bg-bg-blue rounded-full m-auto text-sm w-fit py-px px-4 -translate-y-3'>Development</p>
-          <div className='px-5 py-4 text-left'>
-            <div className='font-medium text-xl mb-2'>Full Stack Development Course</div>
-            <p className='text-sm'>(4.5 ratings)</p>
-            <hr className='my-2'></hr>
-            <div className='flex flex-row justify-between'>
-              <p className='text-xs'>20+ Students</p>
-              <p className='text-xs'>Enroll Now</p>
-            </div>
-          </div>
-        </div> */}
       </div>
       </div>
     </div>
@@ -161,50 +122,6 @@ export default async function Home() {
       <p className='text-sm pt-4 px-10'>Dive into a world of insightful content. Our blogs cover a spectrum of topics, providing valuable perspectives, practical advice, and engaging narratives to enrich your knowledge and experience</p>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10 m-auto px-5 py-10 lg:px-20'>
         <BlogCards blogsData={blogsData}/>
-        {/* <div className='flex flex-row bg-white'>
-          <Image src={'/images/5.png'} width={130} height={160} alt='blog Image'></Image> 
-          <span className='w-full pl-4 py-4 text-left'>
-            <p className='text-base uppercase font-semibold text-blue-text'>Language</p>
-            <p className='text-base font-normal capitalize text-neutral-950'>how to crack interviews</p>
-            <p className='text-xs py-5 text-neutral-600'>Fresh food directly from our restaurant ready coocked for you and you familly</p>
-          </span>
-          <span className='flex p-2 items-center justify-center bg-blue-text mt-auto'>
-            <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-          </span>
-        </div>
-        <div className='flex flex-row bg-white'>
-          <Image src={'/images/5.png'} width={130} height={160} alt='blog Image'></Image> 
-          <span className='w-full pl-4 py-4 text-left'>
-            <p className='text-base uppercase font-semibold text-blue-text'>Language</p>
-            <p className='text-base font-normal capitalize text-neutral-950'>how to crack interviews</p>
-            <p className='text-xs py-5 text-neutral-600'>Fresh food directly from our restaurant ready coocked for you and you familly</p>
-          </span>
-          <span className='flex p-2 items-center justify-center bg-blue-text mt-auto'>
-            <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-          </span>
-        </div>
-        <div className='flex flex-row bg-white'>
-          <Image src={'/images/5.png'} width={130} height={160} alt='blog Image'></Image> 
-          <span className='w-full pl-4 py-4 text-left'>
-            <p className='text-base uppercase font-semibold text-blue-text'>Language</p>
-            <p className='text-base font-normal capitalize text-neutral-950'>how to crack interviews</p>
-            <p className='text-xs py-5 text-neutral-600'>Fresh food directly from our restaurant ready coocked for you and you familly</p>
-          </span>
-          <span className='flex p-2  items-center justify-center bg-blue-text mt-auto'>
-            <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-          </span>
-        </div>
-        <div className='flex flex-row bg-white'>
-          <Image src={'/images/5.png'} width={130} height={160} alt='blog Image'></Image> 
-          <span className='w-full pl-4 py-4 text-left'>
-            <p className='text-base uppercase font-semibold text-blue-text'>Language</p>
-            <p className='text-base font-normal capitalize text-neutral-950'>how to crack interviews</p>
-            <p className='text-xs py-5 text-neutral-600'>Fresh food directly from our restaurant ready coocked for you and you familly</p>
-          </span>
-          <span className='flex p-2 items-center justify-center bg-blue-text mt-auto'>
-            <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-          </span>
-        </div> */}
       </div>
       <Link className='px-8 py-3 mt-6 text-sm rounded-md bg-white hover:bg-btn-bg text-bg-blue hover:text-white text-center font-semibold mx-10 transition-all duration-300 ease-in-out' href={'/blogs'}>View More</Link>
     </div>
@@ -311,54 +228,6 @@ export default async function Home() {
         </Accordion>
       </div>
     </div>
-    {/* <div className="relative p-4 md:p-20 flex flex-col justify-center gap-4 md:flex-row font-Poppins">
-    <img className="h-64" src="/images/1212.png" alt="image"></img>
-    <div className="flex flex-col text-xs text-white justify-between min-w-fit">
-      <span className="border border-bg-blue px-4 py-2 flex flex-row gap-4 justify-between">
-        <p className="ps-2">01 What We Do</p>
-        <span className='mt-auto'>
-            <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-          </span>
-      </span>
-      <span className="border border-bg-blue px-4 py-2 flex flex-row gap-4 justify-between">
-        <p className="ps-2">01 What We Do</p>
-        <span className='mt-auto'>
-            <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-          </span>
-      </span>
-      <span className="border border-bg-blue px-4 py-2 flex flex-row gap-4 justify-between">
-        <p className="ps-2">01 What We Do</p>
-        <span className='mt-auto'>
-            <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-          </span>
-      </span>
-      <span className="border border-bg-blue px-4 py-2 flex flex-row gap-4 justify-between">
-        <p className="ps-2">01 What We Do</p>
-        <span className='mt-auto'>
-            <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-          </span>
-      </span>
-      <span className="border border-bg-blue px-4 py-2 flex flex-row gap-4 justify-between">
-        <p className="ps-2">01 What We Do</p>
-        <span className='mt-auto'>
-            <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-          </span>
-      </span>
-    </div>
-    <div className="flex flex-col px-2 py-1 text-white text-left">
-     <p className="text-sm">Education System</p>
-     <p className="font-bold text-2xl py-2">Consulting Approch to Problem Solving Successful</p>
-     <p className="text-xs py-2">I am glad that you have made it here to send a distress signal, & inform the Senate that all on board were killed. Dantooine. I’m not going to Alderaan. I really got to go. But that to me.</p>
-     <div className="pt-4">
-      <ul className="list-none text-xs grid grid-cols-2 gap-3">
-        <li className="">Time Management Mastery</li>
-        <li className="">The Business Intelligence</li>
-        <li className="">Do More, Stress Less</li>
-        <li className="">Analyst Course 2020</li>
-      </ul>
-     </div>
-    </div>
-    </div> */}
   </> 
   )
 }

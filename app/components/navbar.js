@@ -32,7 +32,7 @@ export default function Navbar()
 
     return(
         <nav className={`w-full ${isHomePage ? "fixed" : "sticky"} z-50 ${!isHomePage || scrolled ? "top-0" : "top-0 sm:top-8"} transition-all duration-1000 ease-in-out`}>
-          <div className={`justify-between font-Poppins font-medium  bg-bg-dark ${!isHomePage || scrolled ? "w-full" : " w-full sm:w-11/12"} transition-all duration-1000 ease-in-out px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8`}>
+          <div className={`justify-between font-Poppins font-medium  bg-bg-dark shadow-md shadow-black/60 ${!isHomePage || scrolled ? "w-full" : " w-full sm:w-11/12"} transition-all duration-1000 ease-in-out px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8`}>
             <div>
               <div className="flex items-center justify-between md:block">
                 <Link href="/">

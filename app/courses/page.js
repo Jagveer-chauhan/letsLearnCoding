@@ -53,10 +53,10 @@ const CourseCard = ({course}) =>{
   // console.log(course)
   const {image,title, category_name, slug} = course;
   return(
-    <Link className="group flex flex-col font-Poppin rounded-md bg-white justify-between hover:-translate-y-2 hover:shadow-md hover:shadow-neutral-500 transition-all" href={`/courses/${slug}`}>
+    <Link className="group flex flex-col font-Poppin rounded-md bg-white justify-between hover:shadow-md hover:shadow-neutral-500 transition-all" href={`/courses/${slug}`}>
       <div className="px-2 pt-2">
         <div className="relative h-40 overflow-hidden">
-          <Image className="object-cover rounded-md group-hover:scale-110 transition-all" src={image} alt={"title"} fill={true}></Image>
+          <Image className="object-cover rounded-md group-hover:scale-110 transition-all" src={image} alt={title} fill={true}></Image>
         </div> 
         <p className="py-2 capitalize rounded-lg -translate-y-4 bg-light-blue text-center text-xs font-medium w-fit px-4 m-auto">{category_name}</p>
       </div>

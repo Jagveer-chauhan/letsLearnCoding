@@ -6,8 +6,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const AccordionComponent = ({ title, content }) => {
   const listPoints = content.split('&&');
   return (
-    <Accordion className='mb-2 bg-bg-blue text-white shadow shadow-bg-blue focus:bg-bg-blue'>
-      <AccordionSummary expandIcon={<ExpandMoreIcon className='text-white'/>} className='bg-bg-blue text-white shadow shadow-bg-blue focus:bg-bg-blue'>
+    <Accordion className='group mb-2 shadow shadow-bg-blue focus:bg-bg-blue'>
+      <AccordionSummary expandIcon={<ExpandMoreIcon className='group-focus-within:text-white'/>} className='shadow shadow-bg-blue focus:bg-bg-blue text-dark-blue focus:text-white capitalize'>
         <Typography className='text-lg font-medium font-Poppins ps-2'>{title}</Typography>
       </AccordionSummary>
       <AccordionDetails className='font-Poppins bg-white text-black'>

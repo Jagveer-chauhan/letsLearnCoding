@@ -57,14 +57,16 @@ export default async function CourseDetails(context)
           <h1 className="text-4xl md:text-4xl font-bold capitalize">{courseData.title}</h1>
           <h2 className="text-xl font-medium">{courseData.tagline}</h2>
       </main>
-      <div className="w-9/12 my-20 font-Poppins text-left flex flex-col gap-10 m-auto">
-        <h3 className="text-4xl font-semibold capitalize text-white">{courseData.heading}</h3>
-        <p className="text-sm text-white">{courseData.description}</p>
-        <h4 className="text-4xl font-semibold text-white capitalize">Course Content</h4>
-        <div className="">
-            {courseContent?.map((item, index) => (
-            <AccordionComponent key={index} {...item} />
-          ))}
+      <div className="bg-white">
+        <div className="w-9/12 py-20 font-Poppins text-left flex flex-col gap-10 m-auto">
+          <h3 className="text-4xl font-semibold capitalize text-dark-blue">{courseData.heading}</h3>
+          <p className="text-base text-neutral-700">{courseData.description}</p>
+          <h4 className="text-4xl font-semibold text-dark-blue capitalize">Course Content</h4>
+          <div className="">
+              {courseContent?.map((item, index) => (
+              <AccordionComponent key={index} {...item} />
+            ))}
+          </div>
         </div>
       </div>
       <ReviewSlider reviews= {courseData.reviews}/>

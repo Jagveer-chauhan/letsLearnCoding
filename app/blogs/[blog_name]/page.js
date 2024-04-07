@@ -92,9 +92,9 @@ async function RecentBlogCard({blog}){
   const {title,slug} = blog;
   return(
     <>
-    <span className="p-2 group border-2 rounded-md border-bg-blue hover:shadow-sm hover:shadow-white">
-      <Link className="text-neutral-300 text-sm font-medium font-Poppins group-hover:text-white" href={`/blogs/${slug}`}>{title}</Link>
-    </span>
+    <Link className="p-2 group border-2 rounded-md border-bg-blue hover:shadow-sm hover:shadow-white" href={`/blogs/${slug}`}>
+      <p className="text-neutral-300 text-sm font-medium font-Poppins group-hover:text-white">{title}</p>
+    </Link>
     </>
   )
 }

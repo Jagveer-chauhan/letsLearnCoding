@@ -6,6 +6,8 @@ import CourseCards from "@/app/components/courseCards";
 import BlogCards from "./components/blogsCards";
 import { Accordion, AccordionSummary, AccordionDetails, Typography} from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 async function HomePageContent(courseName)
 {
@@ -33,12 +35,15 @@ export default async function Home() {
 
   return (
     <>
-    <main className="bg-[url('/images/backgroundImage.png')] text-white hero">
-    <div className="hero-overlay bg-opacity-40"></div>
-     <div className='hero-content flex flex-col h-[80vh] justify-center items-center font-Poppins font-normal text-center pt-12'>
-      <h1 className='text-4xl px-2 font-medium sm:text-5xl md:text-6xl lg:text-7xl'>Empowering Students<br/>For a Bighter Tomorrow</h1>
-      <h2 className='text-xl font-medium pt-6 px-2 sm:text-2xl md:text-2xl lg:text-3xl'>Discover potential, shape a brighter future through quality education and innovation</h2>
-     </div>
+    <main className="bg-black text-white py-20">
+      <div className='hero-content flex flex-col justify-center items-center font-Poppins font-normal text-center'>
+        <h1 className='text-4xl font-semibold md:text-6xl max-w-4xl'>Empowering Students For a Bighter Tomorrow</h1>
+        <h2 className='text-base font-normal text-white/70 max-w-xl'>Discover potential, shape a brighter future through quality education and innovation</h2>
+      <div className="flex flex-row justify-between gap-4 pt-5">
+        <Link href={'/courses'} className="py-2 px-6 bg-orange rounded-full font-medium text-lg">View Courses</Link>
+        <Link href={'/contact'} className="py-2 px-6 border-[1.5px] border-orange rounded-full hover:bg-neutral-800 font-semibold text-lg">Contact Us<FontAwesomeIcon className="ps-2 text-white" icon={faArrowRight}></FontAwesomeIcon></Link>
+      </div>
+      </div>
     </main>
     <div className='flex flex-col justify-evenly items-center bg-bg-blue py-3 px-6 font-Poppins md:flex-row text-white shadow-md shadow-black'>
       <div className='flex flex-col justify-center items-center md:flex-row'>

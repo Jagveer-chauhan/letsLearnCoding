@@ -26,7 +26,9 @@ module.exports = {
       'bg-light-grey':'#EEEBFF',
       'dark-text':'#1C3554',
       'dark-blue-text':'#1C3554',
-      'light-blue':'#4586D6'
+      'light-blue':'#4586D6',
+      'orange':'#F08200',
+      'green': '#008847'
     },
   },
   plugins: [require("daisyui")],
